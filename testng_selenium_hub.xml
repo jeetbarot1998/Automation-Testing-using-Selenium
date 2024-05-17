@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="4">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/priya/IdeaProjects/SeleniumDemo/src/test/java/docker/grid/ChromeRemote.java">
+        <classes>
+            <class name="docker.grid.ChromeRemote">
+                <methods>
+                    <include name="chromeRemote"></include>
+                </methods>
+            </class>
+
+            <class name="docker.grid.FrieFoxRemote">
+                <methods>
+                    <include name="firefoxRemote"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
